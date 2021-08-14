@@ -1,0 +1,56 @@
+* {
+padding:0;
+margin:0;
+vertical-align:baseline;
+list-style:none;
+border:0
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.container{
+  display:grid; /*inicializar o grid*/
+  grid-template-columns:1fr 1fr; /*duvido em 2 colunas*/
+  /**/
+  grid-template-rows: 20vh 15vh 135vh;  /*dividido em 3 linhas*/
+  
+  grid-template-areas:"perfil perfil"
+                      "contato contato" /*marcando áreas em itens dentro do container*/
+                      "experiencia formacao";
+  
+  grid-gap:5px ;/*distancia entre*/
+}
+
+header {
+  background: yellow;
+  grid-area: perfil;
+}
+main {
+  background: red;
+  grid-area: contato;
+}
+aside {
+  background: green;
+  grid-area: experiencia;
+}
+footer {
+  background: blue;
+  grid-area: formacao;
+}
+li{
+    list-style-type: circle;
+}
+#imageMain{
+    width:25px;  
+    height:25px;
+    vertical-align: middle;
+}
+td{
+    text-align: left;
+    vertical-align: top;
+}
+#imageBody{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}

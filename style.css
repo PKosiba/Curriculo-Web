@@ -1,16 +1,22 @@
-* {
-padding:0;
-margin:0;
-vertical-align:baseline;
-list-style:none;
-border:0
-}
-h1 {
+
+h1 { 
+  padding: 0px;
+  margin-left: 40px; 
+  margin-top: 40px;
   font-family: "Times New Roman", Times, serif;
+}
+h2{
+    margin-left: 20px;
+}
+h3{
+    
+}
+body {
+    background: black;
 }
 .container{
   display:grid; /*inicializar o grid*/
-  grid-template-columns:1fr 1fr; /*duvido em 2 colunas*/
+  grid-template-columns:1fr 1fr ; /*divido em 2 colunas*/
   /**/
   grid-template-rows: 20vh 15vh 135vh;  /*dividido em 3 linhas*/
   
@@ -18,27 +24,36 @@ h1 {
                       "contato contato" /*marcando áreas em itens dentro do container*/
                       "experiencia formacao";
   
-  grid-gap:5px ;/*distancia entre*/
+  grid-gap:2px ;/*distancia entre*/
+  border: 10px outset background   ;/*(borda)*/
+  border-style: outset;
+
+
+}
+table{
+    margin-left: 40px;
 }
 
 header {
-  background: yellow;
-  grid-area: perfil;
+  background: whitesmoke;
+  grid-area: perfil; 
+  
 }
 main {
-  background: red;
+  background: whitesmoke;
   grid-area: contato;
 }
 aside {
-  background: green;
+  background: white;
   grid-area: experiencia;
 }
 footer {
-  background: blue;
+  background: white;
   grid-area: formacao;
 }
 li{
     list-style-type: circle;
+    margin-left: 40px;
 }
 #imageMain{
     width:25px;  
@@ -50,7 +65,10 @@ td{
     vertical-align: top;
 }
 #imageBody{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 35px;
     vertical-align: middle;
+}
+dd{
+    margin-left: 60px;
 }
